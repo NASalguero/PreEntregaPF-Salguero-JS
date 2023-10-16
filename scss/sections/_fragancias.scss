@@ -4,9 +4,8 @@
 }
 
 .fragancias img {
-    width: 190px;
+    width: 250px;
     padding: 40px;
-    background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
     background-size: cover;
 }
 
@@ -14,12 +13,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 0;
+    margin: auto;
+    background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+    border-radius: 2rem;
+    border-color: #4171d9;
+    border-style: groove;
+    border-width: thick;
+    width: 25rem;
 
     .btn2 {
         border-radius: 5px;
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+        color: rgb(0, 0, 0);
+        background-color:  #edede8;
         padding: 5px;
     }
 
@@ -28,6 +33,14 @@
     }
 }
 
+.frag-grid h3{
+    background-image: none;
+    text-align: center;
+}
+
+.frag-grid h4 {
+    color: #edede8;
+}
 
 
 
@@ -40,6 +53,7 @@
         "frag3 frag4"
         "frag5 frag6"
     ;
+    gap: 1rem;
 }
 
 .pag-menu {

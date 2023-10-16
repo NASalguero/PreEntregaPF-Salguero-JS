@@ -265,29 +265,42 @@ h6 {
   justify-content: center; }
 
 .fragancias img {
-  width: 190px;
+  width: 250px;
   padding: 40px;
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   background-size: cover; }
 
 .frag-grid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0; }
+  margin: auto;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  border-radius: 2rem;
+  border-color: #4171d9;
+  border-style: groove;
+  border-width: thick;
+  width: 25rem; }
   .frag-grid .btn2 {
     border-radius: 5px;
-    color: white;
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    color: black;
+    background-color: #edede8;
     padding: 5px; }
   .frag-grid .hover2:hover {
     color: #ffd13c; }
+
+.frag-grid h3 {
+  background-image: none;
+  text-align: center; }
+
+.frag-grid h4 {
+  color: #edede8; }
 
 .fragancias {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "frag1 frag2" "frag3 frag4" "frag5 frag6"; }
+  grid-template-areas: "frag1 frag2" "frag3 frag4" "frag5 frag6";
+  gap: 1rem; }
 
 .pag-menu {
   display: flex;

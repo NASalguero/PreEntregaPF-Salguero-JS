@@ -1,5 +1,3 @@
-const catalogoM2 = document.getElementById("catalogoM2");
-
 
 let arrayPerfumes = [];
 
@@ -24,24 +22,11 @@ arrayPerfumes.push(perfume16);
 arrayPerfumes.push(perfume17);
 
 
-
 function saveStorage () {
 
     localStorage.setItem( "carrito" , JSON.stringify(carrito));
 
 };
-
-// function loadStorage () {
-
-//     if (localStorage.getItem( "carrito" )){
-//     let carrito = JSON.parse( localStorage.getItem( "carrito" ));
-//     }
-// };
-
-// let carrito = [];
-// loadStorage()
-let carrito = JSON.parse( localStorage.getItem( "carrito" )) || [];
-
 
 
 function pushearPerfumesHTML(arr,cat){
@@ -73,8 +58,8 @@ function pushearPerfumesHTML(arr,cat){
                 imagen: perfume._imagen,
                 diseñador: perfume._diseñador,
                 precio: perfume._precio,
+                id: perfume._id,
             })
-            // imgCart += 1;
             saveStorage();
 
         });
@@ -83,7 +68,3 @@ function pushearPerfumesHTML(arr,cat){
 
     });
 };
-
-
-const masc2 = arrayPerfumes.slice(7,13);
-pushearPerfumesHTML(masc2,catalogoM2);
