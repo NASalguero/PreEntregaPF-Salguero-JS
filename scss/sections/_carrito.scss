@@ -12,6 +12,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+
 }
 
 .div-carrito {
@@ -19,6 +21,22 @@
     width: 800px;
     justify-content: space-around;
 }
+
+.borrar-perfume {
+    
+    background-color: transparent;
+    color: red;
+    font-size: 1.5rem;
+    box-shadow: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.total-h3 {
+    margin: 1rem;
+}
+
+
 
 .frags-cart {
     display: flex;
