@@ -1,0 +1,57 @@
+
+main div p a {
+    text-decoration: none;
+    color: #de1212;
+}
+
+.main-faqs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+}
+
+.main-faqs div {
+    width: 800px;
+}
+
+.accordion-button {
+    background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+    color: $blanco;
+    background-size: cover;
+    background-position: center;
+}
+
+.accordion-button:hover {
+    color: #dbbf1d;
+}
+
+.accordion-button:not(.collapsed) {
+    color: $blanco;
+}
+
+.accordion-body {
+    background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+    color: $blanco;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:769px) {
+    .main-faqs div {
+        width: 750px;
+    }
+}
+
+@media (max-width:426px) {
+    .main-faqs div{
+        width: auto;
+    }
+    .accordion-body {
+        background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+        color: $amarillento;
+        background-size: cover;
+        background-position: top;
+    }
+}

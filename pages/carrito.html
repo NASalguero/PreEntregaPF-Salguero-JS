@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bienvenido a tu carrito de compra, aquí puedes verificar que productos son los que estas llevando y poner la firma para que empiecen el viaje hasta tus manos.">
+    <meta name="keywords" content="CARRITO, COMPRA, ENVÍO, PERFUMES, FRAGANCIAS, DISEÑADOR">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CARRITO - LE PARFUM D'ANGE</title>
+    <link rel="shortcut icon" href="../resources/alas-doradas.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <section class="alas">
+                    <a href="../index.html"><img src="../resources/alas-doradas.png" alt="Le Parfum d'Ange"></a>
+                    <h1><a class="fuente" href="../index.html">Le Parfum d Ange</a></h1>
+                </section>
+                <section class="links">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active hover" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle hover" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fragancias
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item hover" href="./masculinas.html">Masculinas</a>
+                                    </li>
+                                    <li><a class="dropdown-item hover" href="./femeninas.html">Femeninas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a id="nav-cart" class="nav-link active hover" href="./carrito.html">Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active hover" href="./iniciarSesion.html">Iniciar sesión</a>
+                            </li>
+                        </ul>
+                </section>
+                <form class="d-flex btn-mq-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn hover" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main-carrito" class="main-carrito main">
+        <h2 class="h2-main">¡Bienvenido a tu carrito!</h2>
+        <br>
+
+        <div id="carritoCompras" class="frags-cart"></div>
+
+        <div id="totalCompras"></div>
+
+        <img id = "imgCarrito" class="imgCarrito" src="../resources/carrito-vacio.png" alt="Carrito vacío" title="Carrito vacío">
+        <h3 id = "oops" >¡Oops! Parece que tu carrito esta vacío</h3>
+        <h3>Explorá nuestras fragancias</h3>
+        <div class="div-carrito">
+            <a href="./masculinas.html">Fragancias Masculinas</a>
+            <a href="./femeninas.html">Fragancias Femeninas</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="div1f">
+            <ul>
+                <li>
+                    <a href="./preguntas-frecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.7911166398835!2d-64.18824289999998!3d-31.419880699999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32dcf5d747f%3A0x40373220b29140ac!2sPatio%20Olmos%20Shopping!5e0!3m2!1ses-419!2sar!4v1686265172793!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="div2f">
+            <h4>Seguinos en nuestras redes</h4>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/le.parfum.dange/">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100093219112484">Facebook</a>
+                </li>
+            </ul>
+            <h6>Copyright 2023 © Le Parfum D'Ange.</h6>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="../js/perfumes.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+
+</html>

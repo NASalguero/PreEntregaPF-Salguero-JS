@@ -1,0 +1,88 @@
+.div-frag {
+    display: flex;
+    justify-content: center;
+}
+
+.fragancias img {
+    width: 190px;
+    padding: 40px;
+    background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+    background-size: cover;
+}
+
+.frag-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+
+    .btn2 {
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+        padding: 5px;
+    }
+
+    .hover2:hover {
+        color: #ffd13c;
+    }
+}
+
+
+
+
+.fragancias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "frag1 frag2"
+        "frag3 frag4"
+        "frag5 frag6"
+    ;
+}
+
+.pag-menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
+
+.pagination {
+    --bs-pagination-padding-x: 0.75rem;
+    --bs-pagination-padding-y: 0.375rem;
+    --bs-pagination-font-size: 1rem;
+    --bs-pagination-color: #ffffff;
+    --bs-pagination-bg: #537895;
+    --bs-pagination-border-width: var(--bs-border-width);
+    --bs-pagination-border-color: #09203f;
+    --bs-pagination-border-radius: var(--bs-border-radius);
+    --bs-pagination-hover-color: #ffffff;
+    --bs-pagination-hover-bg: #09203f;
+    --bs-pagination-hover-border-color: #537895;
+    --bs-pagination-focus-color: #1f578f;
+    --bs-pagination-focus-bg: var(--bs-secondary-bg);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-pagination-active-color: #000000;
+    --bs-pagination-active-bg: #4171d9;
+    --bs-pagination-active-border-color: #000;
+    --bs-pagination-disabled-color: rgb(224, 224, 224);
+    --bs-pagination-disabled-bg: rgb(105, 131, 157);
+    --bs-pagination-disabled-border-color: #000000;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+@media (max-width:426px) {
+    .fragancias {
+        grid-template-columns: none;
+        grid-template-areas: none;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}

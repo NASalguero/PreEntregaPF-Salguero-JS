@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Rari";
+    src: url(../resources/fonts/Altheria-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header {
+    .navbar {
+        background-image: linear-gradient(to top, $oscuro 0%, $claro 100%) !important;
+        /* se utiliza !important para pisar el important en el backround de bootstrap */
+        background-size: cover;
+
+        .alas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 50px;
+
+            .fuente {
+                color: $blanco;
+                font-family: "Rari";
+                font-size: 55%;
+                font-weight: 600;
+                margin: auto;
+                text-decoration: none;
+            }
+        }
+    }
+
+    
+    .alas img {
+        width: 125px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-content: space-between;
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.show {
+            color: $blanco;
+            font-family: "Rari";
+            font-size: 125%;
+            font-weight: 600;
+        }
+
+        .dropdown-menu {
+            background-color: $amarillento;
+        }
+
+        .hover:hover {
+            color: #252424 !important;
+            background-color: $amarillento;
+            border-radius: 5%;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgb(249, 225, 165);
+        }
+    }
+
+    .btn {
+        color: $blanco;
+        border-color: $blanco;
+    }
+
+    .btn:hover {
+        background-color: $amarillento;
+    }
+
+    header input {
+        background-color: $amarillento;
+    }
+}
+
+@media (max-width:1025px) {
+    .navbar {
+        .alas {
+            .fuente {
+                text-align: center;
+            }
+        }
+
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .links {
+            margin: 10px 0;
+        }
+    }
+}
+
+@media (max-width:769px) {
+    .navbar {
+        .alas {
+            padding-right: 0;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .navbar-toggler {
+            background-color: $blanco;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+@media (max-width:426px) {
+    .alas {
+        padding: 15px 110px;
+    }
+
+    .navbar .container-fluid {
+        justify-content: center;
+    }
+
+    .navbar-toggler {
+        background-color: $blanco;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 50px;
+    }
+
+    .fuente {
+        justify-content: center;
+    }
+}

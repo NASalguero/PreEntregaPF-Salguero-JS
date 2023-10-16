@@ -1,0 +1,37 @@
+.iniciarSesion{
+    min-height: 500px;
+    .sesionForm{
+        margin: 20px 0;
+        padding: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        .iSForm{
+            margin: 7px;
+            font-size: larger;
+            font-weight: bold;
+        }
+        .divForm{
+            display: flex;
+            margin: 10px;
+            text-decoration: none;
+            color: $oscuro;
+        }
+    }
+}
+.sesionForm input{
+    font-size: larger;
+}
+.sesionForm button{
+    font-size: larger;
+    margin: 7px;
+}
+.sesionForm a{
+    font-size: larger;
+}
+
+h2{
+    text-align: center;
+    padding: 30px;
+}

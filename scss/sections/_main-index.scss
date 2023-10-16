@@ -1,0 +1,145 @@
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    background-color: #edede8;
+    background-size: cover;
+
+    .hero {
+        width: 100vw;
+    }
+
+    .iframe-div {
+        display: flex;
+        height: 400px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px 0;
+
+        .h2-main {
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 0 8px;
+        }
+
+    }
+
+    .oferta {
+        display: flex;
+        justify-content: space-around;
+
+        .of1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .price {
+                color: #000000;
+                background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+                background-size: cover;
+                color: $blanco;
+                margin: 10px 0;
+            }
+        }
+
+        .btn2 {
+            border-radius: 5px;
+            color: $blanco;
+            background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+            padding: px;
+        }
+
+        .hover2:hover {
+            color: $amarillento;
+        }
+    }
+
+    .perf-banner {
+        display: flex;
+        margin: 50px 0;
+
+        .banner {
+            width: 100vw;
+
+        }
+
+    }
+
+    .main-pd-bot {
+        padding-bottom: 20px;
+    }
+
+}
+
+
+.of1 img {
+    width: 190px;
+    padding: 40px;
+    background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+    background-size: cover;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 3px;
+    background-image: linear-gradient(to top, $oscuro 0%, $claro 100%);
+    background-size: cover;
+    color: $blanco;
+}
+
+
+@media (max-width:1025px) {
+    .main h3{
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+@media (max-width:769px) {
+    .main{
+        .h2-main{
+            text-align: center;
+        }
+        .oferta{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            .of1{
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+@media (max-width:426px) {
+    .main {
+
+        .iframe-div {
+            margin: auto;
+
+            .h2-main {
+                margin: 10px 30px;
+                text-align: center;
+            }
+        }
+
+        .oferta {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+
+    h3 {
+        margin-top: 5px;
+    }
+
+    .iframe-div iframe {
+        width: 420px;
+    }
+}
+}
