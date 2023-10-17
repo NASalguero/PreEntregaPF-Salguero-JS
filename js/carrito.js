@@ -4,6 +4,8 @@ const imgCarrito = document.querySelector("#imgCarrito");
 const oops = document.querySelector("#oops");
 const carritoCompras = document.getElementById("carritoCompras");
 
+let quitarPerfume = document.getElementById("quitarPerfume");
+
 function openCarrito() {
 
     if(carrito){
@@ -45,11 +47,11 @@ function openCarrito() {
         
                 carritoCompras.append(contenidoCart);
 
-                let quitarPerfume = document.getElementById("quitarPerfume");
+                
                 // quitarPerfume.addEventListener("click", borrarPerfume);
             });
             
-            const total = carrito.reduce((acumulador , perfume) => acumulador + perfume.precio, 0);
+            const total = carrito.reduce((acumulador , perfume) => acumulador + (perfume.precio * perfume.cantidad), 0);
         
             const compraTotal = document.createElement("h3");
             compraTotal.className = "total-h3"
@@ -60,14 +62,9 @@ function openCarrito() {
 };
 openCarrito();
 
-// const borrarPerfume = () => {
-//     const idBuscado = carrito.find((perfume) => perfume.id);
-//     carrito = carrito.filter ((perfumeID) =>{
-//         return perfumeID !== idBuscado;
-//     });
-
-//     openCarrito();
-
-// };
+// quitarPerfume.addEventListener("click", );
 
 
+// ELIMINAR CON LIBRERIA PRODUCTO POR UNIDAD O TODOS LOS PRODUCTOS IGUALES
+
+// VACIAR EL CARRITO Y BOTON IR A PAGAR CON LIBRERIAS

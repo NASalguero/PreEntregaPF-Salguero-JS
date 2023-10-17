@@ -9,7 +9,8 @@
         content="Bienvenido a las fragancias femeninas, hecha un vistazo a cada producto de diseñador y presiona el botón Añadir al carrito para comprar.">
     <meta name="keywords"
         content="FRAGANCIAS, FEMENINAS, DIOR, GIVENCHY, PACO RABANNE, CAROLINA HERRERA, YVES SAINT LAURENT, JEAN PAUL GAULTIER, BVLGARI, VERSACE, KENZO, ARMANI">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -63,54 +64,13 @@
             </div>
         </nav>
     </header>
-    <main class="main">
+    <main>
         <div class="div-frag">
             <h2 class="h2-main">Fragancias femeninas:</h2>
         </div>
-        <div class="fragancias">
 
-            <div class="frag-grid frag1" data-aos="fade-up">
-                <h3>Flower - Kenzo</h3>
-                <img src="../resources/fragancias/femeninas/flower-kenzo.png" alt="Flower - Kenzo"
-                    title="Flower - Kenzo">
-                <h4>$54.160</h4>
-                <button class="btn2 hover2" type="submit">Agregar al carrito</button>
-            </div>
-            <div class="frag-grid frag2" data-aos="fade-up">
-                <h3>Eros Femme - Versace</h3>
-                <img src="../resources/fragancias/femeninas/eros-femme.png" alt="Eros Femme - Versace"
-                    title="Eros Femme - Versace">
-                <h4>$58.750</h4>
-                <button class="btn2 hover2" type="submit">Agregar al carrito</button>
-            </div>
-            <div class="frag-grid frag3" data-aos="fade-up">
-                <h3>Goldea - Bvlgari</h3>
-                <img src="../resources/fragancias/femeninas/goldea.png" alt="Goldea - Bvlgari" title="Goldea - Bvlgari">
-                <h4>$56.400</h4>
-                <button class="btn2 hover2" type="submit">Agregar al carrito</button>
-            </div>
-            <div class="frag-grid frag4" data-aos="fade-up">
-                <h3>Good Girl - Carolina Herrera</h3>
-                <img src="../resources/fragancias/femeninas/good-girl.png" alt="Good Girl - Carolina Herrera"
-                    title="Good Girl - Carolina Herrera">
-                <h4>$53.650</h4>
-                <button class="btn2 hover2" type="submit">Agregar al carrito</button>
-            </div>
-            <div class="frag-grid frag5" data-aos="fade-up">
-                <h3>My Way - Giorgio Armani</h3>
-                <img src="../resources/fragancias/femeninas/my-way.png" alt="My Way - Giorgio Armani"
-                    title="My Way - Giorgio Armani">
-                <h4>$57.200</h4>
-                <button class="btn2 hover2" type="submit">Agregar al carrito</button>
-            </div>
-            <div class="frag-grid frag6" data-aos="fade-up">
-                <h3>Libre femme - Yves Saint Laurent</h3>
-                <img src="../resources/fragancias/femeninas/libre-femme.png" alt="Libre femme - Yves Saint Laurent"
-                    title="Libre femme - Yves Saint Laurent">
-                <h4>$55.100</h4>
-                <button class="btn2 hover2" type="submit">Agregar al carrito</button>
-            </div>
-        </div>
+        <div id="catalogoF1" class="fragancias oferta"></div>
+
         <section class="pag-menu">
             <ul class="pagination">
                 <li class="page-item disabled">
@@ -166,6 +126,11 @@
     <script>
         AOS.init();
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="../js/perfumes.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/catalogo/catalogoF1.js"></script>
 </body>
 
 </html>
