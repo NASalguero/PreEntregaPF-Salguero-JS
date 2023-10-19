@@ -94,6 +94,9 @@
 main {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
+.mant {
+  width: 100vw; }
+
 .main {
   background-color: #edede8;
   background-size: cover; }
@@ -445,6 +448,15 @@ h2 {
 
 .total-h3 {
   margin: 1rem; }
+
+.comprar {
+  background-color: brown;
+  border-radius: 2rem;
+  color: aliceblue;
+  width: 30vw;
+  height: 8vh;
+  margin-bottom: 12px;
+  font-size: 150%; }
 
 .frags-cart {
   display: flex;

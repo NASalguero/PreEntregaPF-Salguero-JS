@@ -3,8 +3,17 @@ const mainCarrito = document.getElementById("main-carrito");
 const imgCarrito = document.querySelector("#imgCarrito");
 const oops = document.querySelector("#oops");
 const carritoCompras = document.getElementById("carritoCompras");
+const comprar = document.getElementById("comprar");
 
-let quitarPerfume = document.getElementById("quitarPerfume");
+const quitarPerfume = document.getElementById("quitarPerfume");
+
+function saveStorage () {
+
+    localStorage.setItem( "carrito" , JSON.stringify(carrito));
+
+};
+
+
 
 function openCarrito() {
 
@@ -50,6 +59,7 @@ function openCarrito() {
                 
                 // quitarPerfume.addEventListener("click", borrarPerfume);
             });
+
             
             const total = carrito.reduce((acumulador , perfume) => acumulador + (perfume.precio * perfume.cantidad), 0);
         
@@ -57,14 +67,42 @@ function openCarrito() {
             compraTotal.className = "total-h3"
             compraTotal.innerHTML = `Total a pagar : $${total}`;
             totalCompras.append(compraTotal);
+
+            comprar.innerHTML = `
+            <button class ="comprar">COMPRAR</button>
+            `
+
+            comprar.addEventListener("click", () => {
+
+                Swal.fire({
+                    title: '¿Finalizó su compra?',
+                    text: "¿Está seguro de que desea ir a pagar?",
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3aaf2f',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: '<a href="../pages/pagMantenimiento.html">¡Si, quiero comprar!</a>',
+                    cancelButtonText: `No, quiero seguir comprando`,
+                  })
+
+            });
+
+
     };
 
 };
 openCarrito();
 
-// quitarPerfume.addEventListener("click", );
 
+
+
+
+
+
+// USAR FETCH
 
 // ELIMINAR CON LIBRERIA PRODUCTO POR UNIDAD O TODOS LOS PRODUCTOS IGUALES
 
 // VACIAR EL CARRITO Y BOTON IR A PAGAR CON LIBRERIAS
+
+// agregar funcionalidad al buscador?

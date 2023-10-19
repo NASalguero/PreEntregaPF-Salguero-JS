@@ -59,6 +59,7 @@ function saveStorage () {
 
 };
 
+
 let arrayControl = [];
 
 function pushearPerfumesHTML(arr,cat){
@@ -105,7 +106,7 @@ function pushearPerfumesHTML(arr,cat){
             };
             
             Toastify({
-                text: `${perfume._nombre} de ${perfume._diseñador} fue agregado al carrito`,
+                text: `${perfume._nombre} de ${perfume._diseñador} fue agregado al carrito (${perfume._cantidad})`,
                 className: "info",
                 style: {
                   background: `linear-gradient(to right, #09203f, #537895)`,
