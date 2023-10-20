@@ -1,12 +1,14 @@
-let = arrayFetch = [];
+let arrayFetch = [];
+// fetch("../perfumesFetch.json")
+//         .then(r => r.json())
+//         .then(data => {
+//             arrayFetch = data;
+//             pushearPerfumesHTML(arrayFetch,)
+//         });
 
-fetch("./js/perfumesFetch.json");
-    .then(response => response.json())
-    .then(data => {
-        arrayFetch = data;
-    });
 
 
+asignarCantidad(arrayFetch);
 
 
 
@@ -130,25 +132,6 @@ function pushearPerfumesHTML(arr,cat,v){
     });
 };
 
-
-// function agregarAlCarro(e) {
-
-//     const idBoton = e.id;
-//     const productoAgregado = perfume.find(perfume => perfume._id === idBoton);
-    
-//     if(carrito.some(perfume => perfume.id === idBoton)){
-
-//     }else{
-//         productoAgregado.cantidad = 1;
-//         carrito.push(productoAgregado)
-//     }
-
-//     // carrito.push(productoAgregado)
-//     // console.log(productoAgregado)
-
-// }
-
-// agregarAlCarro()
 
 
 

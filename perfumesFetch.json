@@ -1,0 +1,87 @@
+[
+    {
+        "_nombre": "Phantom EDT",
+        "_diseñador":"Paco Rabanne",
+        "_precio":70500,
+        "_imagen":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fshopping-onboard.tallink.com%2Fen%2Fserenade%2Fproduct%2Fpaco-rabanne-phantom-edt-50-ml-246907&psig=AOvVaw3jiITW4jrAjXjjajDyzsXT&ust=1697855527867000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDNhO3Kg4IDFQAAAAAdAAAAABAQ",
+        "_id":37
+    },
+    {
+        "_nombre":"Invictus EDT",
+        "_diseñador":"Paco Rabanne",
+        "_precio":68600,
+        "_imagen":"./resources/fragancias/masculinas/invictus.png",
+        "_id":38
+    },
+    {
+        "_nombre":"Sauvage Elixir",
+        "_diseñador":"Dior",
+        "_precio":85000,
+        "_imagen":"./resources/fragancias/masculinas/sauvage.png",
+        "_id":39
+    },
+    {
+        "_nombre":"Gentleman Society",
+        "_diseñador":"Givenchy",
+        "_precio":73500,
+        "_imagen":"./resources/fragancias/masculinas/gentleman-society.jpg",
+        "_id":40
+    },
+    {
+        "_nombre":"The Dreamer",
+        "_diseñador":"Versace",
+        "_precio":74600,
+        "_imagen":"./resources/fragancias/masculinas/dreamer.png",
+        "_id":41
+    },
+    {
+        "_nombre":"Polo Blue",
+        "_diseñador":"Ralph Lauren",
+        "_precio":69600,
+        "_imagen":"./resources/fragancias/masculinas/polo.png",
+        "_id":42
+    },
+    {
+        "_nombre":"Amor Amor",
+        "_diseñador":"Cacharel",
+        "_precio":65900,
+        "_imagen":"./resources/fragancias/femeninas/cacharel.png",
+        "_id":43
+    },
+    {
+        "_nombre":"Ange Ou Demon",
+        "_diseñador":"Givenchy",
+        "_precio":63200,
+        "_imagen":"./resources/fragancias/femeninas/ange.png",
+        "_id":44
+    },
+    {
+        "_nombre":"Nina Le Parfum",
+        "_diseñador":"Nina Ricci",
+        "_precio":60200,
+        "_imagen":"./resources/fragancias/femeninas/nina.png",
+        "_id":45
+    },
+    {
+        "_nombre":"Gaultier Divine",
+        "_diseñador":"Jean Paul Gaultier",
+        "_precio":67400,
+        "_imagen":"./resources/fragancias/femeninas/divine.webp",
+        "_id":46
+    },
+    {
+        "_nombre":"Lady Million",
+        "_diseñador":"Paco Rabanne",
+        "_precio":59400,
+        "_imagen":"./resources/fragancias/femeninas/ladym.png",
+        "_id":47
+    },
+    {
+        "_nombre":"Royal Marina Diamond",
+        "_diseñador":"Marina De Bourbon",
+        "_precio":53700,
+        "_imagen":"./resources/fragancias/femeninas/royal.webp",
+        "_id":48
+    }
+
+]

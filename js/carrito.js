@@ -97,10 +97,8 @@ openCarrito();
 
 
 
+// TUVE INCONVIENIENTES PARA DARLE FUNCIONALIDAD AL BOTON DE ELIMINAR PRODUCTO DEL CARRITO
 
 
-// USAR FETCH
 
 
-
-// agregar funcionalidad al buscador?
