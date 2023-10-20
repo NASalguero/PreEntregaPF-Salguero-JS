@@ -1,0 +1,87 @@
+[
+    {
+        "nombre": "Phantom EDT",
+        "diseñador":"Paco Rabanne",
+        "precio":70500,
+        "imagen":"./resources/fragancias/masculinas/phantom.png",
+        "id":37
+    },
+    {
+        "nombre":"Invictus EDT",
+        "diseñador":"Paco Rabanne",
+        "precio":68600,
+        "imagen":"./resources/fragancias/masculinas/invictus.png",
+        "id":38
+    },
+    {
+        "nombre":"Sauvage Elixir",
+        "diseñador":"Dior",
+        "precio":85000,
+        "imagen":"./resources/fragancias/masculinas/sauvage.png",
+        "id":39
+    },
+    {
+        "nombre":"Gentleman Society",
+        "diseñador":"Givenchy",
+        "precio":73500,
+        "imagen":"./resources/fragancias/masculinas/gentleman-society.jpg",
+        "id":40
+    },
+    {
+        "nombre":"The Dreamer",
+        "diseñador":"Versace",
+        "precio":74600,
+        "imagen":"./resources/fragancias/masculinas/dreamer.png",
+        "id":41
+    },
+    {
+        "nombre":"Polo Blue",
+        "diseñador":"Ralph Lauren",
+        "precio":69600,
+        "imagen":"./resources/fragancias/masculinas/polo.png",
+        "id":42
+    },
+    {
+        "nombre":"Amor Amor",
+        "diseñador":"Cacharel",
+        "precio":65900,
+        "imagen":"./resources/fragancias/femeninas/cacharel.png",
+        "id":43
+    },
+    {
+        "nombre":"Ange Ou Demon",
+        "diseñador":"Givenchy",
+        "precio":63200,
+        "imagen":"./resources/fragancias/femeninas/ange.png",
+        "id":44
+    },
+    {
+        "nombre":"Nina Le Parfum",
+        "diseñador":"Nina Ricci",
+        "precio":60200,
+        "imagen":"./resources/fragancias/femeninas/nina.png",
+        "id":45
+    },
+    {
+        "nombre":"Gaultier Divine",
+        "diseñador":"Jean Paul Gaultier",
+        "precio":67400,
+        "imagen":"./resources/fragancias/femeninas/divine.webp",
+        "id":46
+    },
+    {
+        "nombre":"Lady Million",
+        "diseñador":"Paco Rabanne",
+        "precio":59400,
+        "imagen":"./resources/fragancias/femeninas/ladym.png",
+        "id":47
+    },
+    {
+        "nombre":"Royal Marina Diamond",
+        "diseñador":"Marina De Bourbon",
+        "precio":53700,
+        "imagen":"./resources/fragancias/femeninas/royal.webp",
+        "id":48
+    }
+
+]

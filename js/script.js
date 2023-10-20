@@ -1,3 +1,10 @@
+let = arrayFetch = [];
+
+fetch("./js/perfumesFetch.json");
+    .then(response => response.json())
+    .then(data => {
+        arrayFetch = data;
+    });
 
 
 
@@ -62,11 +69,11 @@ function saveStorage () {
 
 let arrayControl = [];
 
-function pushearPerfumesHTML(arr,cat){
+function pushearPerfumesHTML(arr,cat,v){
 
     arr.forEach((perfume) => {
 
-        carrito.innerHTML = "";
+        v.innerHTML = "";
         let contenido = document.createElement("div");
         contenido.setAttribute("data-aos", "fade-up")
         contenido.className = "frag-grid";
@@ -87,15 +94,15 @@ function pushearPerfumesHTML(arr,cat){
 
         agregarCarrito.addEventListener("click", () => {
 
-            let control = carrito.some((producto) => producto.id === perfume._id);
+            let control = v.some((producto) => producto.id === perfume._id);
             if(control) {
-                carrito.map((e) =>{
+                v.map((e) =>{
                     if (e.id === perfume._id){
                         e.cantidad++;
                     };
                 });
             }else{
-                carrito.push({
+                v.push({
                     nombre: perfume._nombre,
                     imagen: perfume._imagen,
                     diseñador: perfume._diseñador,

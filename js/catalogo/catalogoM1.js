@@ -23,7 +23,7 @@ let carrito = JSON.parse( localStorage.getItem( "carrito" )) || [];
 
 
 const masc1 = arrayPerfumesM.slice(0,6);
-pushearPerfumesHTML(masc1,catalogoM1);
+pushearPerfumesHTML(masc1,catalogoM1,carrito);
 
 
 
